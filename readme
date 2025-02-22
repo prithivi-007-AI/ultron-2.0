@@ -1,0 +1,53 @@
+AI Voice Assistant
+
+Overview
+This AI Voice Assistant is a Python-based project that enables users to interact with their personal assistant using voice commands. It can play YouTube videos, navigate PowerPoint slides, engage in casual conversations using GPT-2, and remember past interactions.
+
+Features
+- Voice Recognition: Uses `speech_recognition` to convert speech to text.
+- Text-to-Speech: Uses `pyttsx3` for assistant responses.
+- GPT-2 Integration: Generates conversational responses using a pre-trained GPT-2 model.
+- YouTube Video Playback: Plays YouTube videos based on voice commands via `pywhatkit`.
+- PowerPoint Slide Navigation: Controls slides using `pyautogui`.
+- Chat History Management: Remembers past interactions and retrieves responses.
+
+Requirements
+Ensure you have the following dependencies installed:
+
+pip install torch transformers pyttsx3 speechrecognition pywhatkit pyautogui
+
+Installation
+1. Clone the repository:
+   git clone https://github.com/yourusername/AI-Voice-Assistant.git
+2. Navigate to the project folder:
+   cd AI-Voice-Assistant
+3. Install dependencies:
+   pip install -r requirements.txt
+4. Run the script:
+   python assistant.py
+
+Usage
+- Start the assistant by running the script.
+- Say "Play [video name] on YouTube" to play a YouTube video.
+- Say "Next slide" or "Previous slide" to navigate PowerPoint slides.
+- Engage in a conversation by speaking naturally.
+- Say "Remember [query]" to check previous conversations.
+- Say "Exit" or "Stop" to terminate the assistant.
+
+File Structure
+AI-Voice-Assistant/
+│── assistant.py  # Main script
+│── chat_history.txt  # Stores chat history
+│── README.md  # Documentation
+│── requirements.txt  # List of dependencies
+
+Future Enhancements
+- Integrate a more advanced language model (e.g., GPT-3 or LLaMA).
+- Add support for additional voice commands.
+- Improve memory persistence with a database.
+
+License
+This project is licensed under the MIT License.
+
+Author
+Prithivi Raj.T
